@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+    /* Delete ltr */
+    /* outline: 3px solid blue; */
+}
+
+/* Navbar styles */
+.navbar {
+    background: #DD0000;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#navbar__logo {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.navbar__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+#searches {
+    display: none;
+}
+
+.navbar__item {
+    padding: 10px;
+}
+
+.navbar__item a {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-moon {
+    color: white;
+}
+
+  /* Search */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Line */
+hr {
+    color: grey;
+    border-top: 0.1px solid grey;
+    width: 100%;
+    margin: 10px 0;
+}
+
+main p {
+    margin: 10px 0;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+  }
+
+.search-box input[type="text"] {
+    padding: 10px;
+    border: none;
+    border: 0.5px solid #000; /* Adjust the border-width and color as needed */
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+.search-box button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #DD0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+.search-box button:hover {
+    color: #e24624;
+}
+
+.privacy-box {
+    margin-top: 50%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.privacy-box h2 {
+    margin: 15px 0;
+}
+
+.privacy-box p {
+    margin: 5px 0;
+}
+
+.buttons-wrapper {
+    display: flex;
+}
+
+.accept button {
+    padding: 10px 20px;
+    background-color: #DD0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.privacy-box button:hover {
+    color: #e24624;
+}
+
+.setting-direct button {
+    padding: 10px 20px;
+    background-color: #DD0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.setting-direct button:hover {
+    color: #e24624;
+}
+
+/* Testing hiding Searches */
+@media (min-width: 515px) {
+    #searches {
+        display: inline;
+    }
+}
+
